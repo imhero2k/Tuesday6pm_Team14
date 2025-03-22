@@ -36,7 +36,7 @@ public class Ticket
     {
         this.price = price;
         saleByAge(passenger.getAge()); //changes price of the ticket according to the age category of passenger
-        serviceTax( ); //changes price by adding service tax to the ticket
+        serviceTax(); //changes price by adding service tax to the ticket
     }
 
     public void saleByAge(int age)
