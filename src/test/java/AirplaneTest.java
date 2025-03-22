@@ -28,4 +28,13 @@ public class AirplaneTest {
         airplane.setAirplaneModel("Airbus A350");
         assertEquals("Airbus A350", airplane.getAirplaneModel());
     }
+    @Test
+    void testGetBusinessSitsNumber() {
+        assertEquals(20, airplane.getBusinessSitsNumber());
+    }
+    @Test
+    void testSetBusinessSitsNumber() {
+        airplane.setBusinessSitsNumber(25);
+        assertEquals(25, airplane.getBusinessSitsNumber());
+    }
 }
