@@ -33,6 +33,13 @@ public class AirplaneTest {
     }
 
     @Test
+    @DisplayName("Test whether the airplaneModel does not change when an empty string is passed")
+    void testSetAirplaneModelToEmptyString() {
+        airplane.setAirplaneModel("");
+        assertEquals("Airbus A350", airplane.getAirplaneModel());
+    }
+
+    @Test
     @DisplayName("Test whether the businessSitsNumber field correctly returns the field's expected value.")
     void testGetBusinessSitsNumber() {
         assertEquals(20, airplane.getBusinessSitsNumber());
